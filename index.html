@@ -22,7 +22,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      /* Safe padding for notch + universal spacing */
+      /* Safe padding untuk layar HP dengan notch */
       padding-top: max(env(safe-area-inset-top), 24px);
       padding-bottom: max(env(safe-area-inset-bottom), 24px);
       padding-left: 20px;
@@ -44,7 +44,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-bottom: 20px; /* jarak ke card */
+      margin-bottom: 20px;
     }
 
     .logo-frame {
@@ -62,7 +62,7 @@
       overflow: hidden;
     }
 
-    /* Jika kamu pakai logo gambar */
+    /* Untuk logo gambar */
     .logo-frame img {
       width: 100%;
       height: 100%;
@@ -153,7 +153,6 @@
       display: flex;
     }
 
-    /* Track dua kali agar seamless */
     .marquee-track {
       display: inline-flex;
       white-space: nowrap;
@@ -168,17 +167,16 @@
     .marquee-item {
       font-size: 12px;
       color: rgba(255,255,255,.85);
-      padding-right: 50px; /* spasi antar ulang */
+      padding-right: 50px;
     }
 
-    /* Pause saat hover (UX bagus) */
     .marquee-box:hover .marquee-track {
       animation-play-state: paused;
       cursor: default;
     }
 
     /* =========================================================
-       (7) OPTIMASI UNTUK HP KECIL
+       (7) OPTIMASI HP MINI
        ========================================================= */
     @media (max-height: 650px) {
       .logo-frame {
@@ -199,9 +197,7 @@
   <!-- ===================== LOGO ======================= -->
   <div class="logo-container">
     <div class="logo-frame">
-      <!-- contoh logo:
-      <img src="logo.png" alt="">
-      -->
+      <img src="logo.png" alt="Logo">
     </div>
   </div>
 
